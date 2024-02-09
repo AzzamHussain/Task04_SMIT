@@ -5,15 +5,17 @@
 import 'dart:io';
 
 void main(){
+  Map credentials={"emailp":"azzamhussain@gmail.com","passwordp":"1234"};
+bool Login=false;
+while(!Login){
   print("Enter your Email:");
   String email=stdin.readLineSync()!;
   print("Enter your Password:");
   String password=stdin.readLineSync()!;
-  Map credentials={"emailp":"azzamhussain@gmail.com","passwordp":"1234"};
-  if (email!=credentials["emailp"] && password!=credentials["passwordp"]) {
-    print("Enter your credentials again");
-  } else {
-    print("login successfull");
+  while (email==credentials["emailp"] && password==credentials["passwordp"]) {
+    print("Login Succesfull");
+   } 
   }
+  
 
 }
